@@ -33,14 +33,62 @@ This repository provides Python tools for:
 ## Installation
 
 ### Requirements
-- Python 3.8+
-- phidl
-- numpy
-- shapely (for polygon operations)
+- Python 3.8+ (tested with Python 3.10)
+- phidl (GDS layout library)
+- numpy (numerical computing)
+- shapely (polygon operations)
+- Optional: jupyter, matplotlib (for interactive notebooks)
 
-### Setup
+### Quick Setup (Recommended)
+
+#### Option 1: Using conda (Recommended)
 ```bash
+# Create a new environment
+conda create -n slab_junctions python=3.10 -y
+
+# Activate the environment
+conda activate slab_junctions
+
+# Install dependencies
 pip install -r requirements.txt
+
+# Test the installation
+python test_installation.py
+```
+
+#### Option 2: Using pip
+```bash
+# Create a virtual environment (optional but recommended)
+python -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Test the installation
+python test_installation.py
+```
+
+### Verification
+
+After installation, run the test script to verify everything works:
+```bash
+python test_installation.py
+```
+
+You should see output like:
+```
+======================================================================
+SLAB JUNCTIONS - INSTALLATION TEST
+======================================================================
+
+[OK] Imports: PASSED
+[OK] phidl_bridge: PASSED
+[OK] Dose Chip Generator: PASSED
+[OK] Junction Functions: PASSED
+
+[OK] ALL TESTS PASSED!
+The slab_junctions package is working correctly.
 ```
 
 ## Quick Start
