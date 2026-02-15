@@ -125,6 +125,22 @@ See `junction_experiments/` for interactive notebooks and examples:
 - `examples/asymmetric_junction.py`: Asymmetric junction example
 - `templates/template_array.py`: Junction array template
 
+## Documentation
+
+### phidl_bridge User Guide
+Comprehensive guide to using the phidl_bridge API for CPW layout design:
+
+📖 **[PHIDL_BRIDGE_GUIDE.md](PHIDL_BRIDGE_GUIDE.md)**
+
+Covers:
+- **Common functions**: CPWStraight, CPWLinearTaper, CPWBend
+- **CPW geometry convention**: Understanding pinw/gapw parameters
+- **Layer management**: Single and two-layer modes for optical/e-beam
+- **Complete examples**: Lines, bends, tapers, junctions, meanders
+- **Best practices**: Tips and troubleshooting
+
+Perfect for learning how to create custom CPW structures!
+
 ## Repository Structure
 
 ```
